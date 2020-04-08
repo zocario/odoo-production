@@ -121,7 +121,7 @@ $('.oe_website_sale').each(function () {
 
         if ($("#product_detail").length) {
             // display the reduction from the pricelist in function of the quantity
-            ajax.jsonRpc("/shop/get_unit_price", 'call', {'product_ids': product_ids,'add_qty': parseInt(qty)})
+            ajax.jsonRpc("/shop/get_unit_price", 'call', {'product_ids': product_ids,'add_qty': parseFloat(qty)})
             .then(function (data) {
                 _.each(product_dom, function (prod) {
                     var current = $(prod).data("attribute_value_ids");
@@ -152,7 +152,7 @@ $('.oe_website_sale').each(function () {
         if ($input.data('update_change')) {
             return;
         }
-      var value = parseInt($input.val() || 0, 10);
+      var value = parseFloat($input.val() || 0, 10);
       if (isNaN(value)) {
           value = 1;
       }
@@ -176,7 +176,7 @@ $('.oe_website_sale').each(function () {
         'set_qty': value})
         .then(function (data) {
             $input.data('update_change', false);
-            var check_value = parseInt($input.val() || 0, 10);
+            var check_value = parseFloat($input.val() || 0, 10);
             if (isNaN(check_value)) {
                 check_value = 1;
             }
