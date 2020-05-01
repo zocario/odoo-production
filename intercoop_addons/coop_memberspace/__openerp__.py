@@ -11,11 +11,12 @@
     'author': 'La Louve',
     'website': 'http://www.lalouve.net',
     'depends': [
-        'website',
         'coop_shift',
-        'theme_bootswatch',
+        'create_users_partners',
         'email_pos_receipt',
-        'create_users_partners'
+        'email_attachment_custom',
+        'theme_bootswatch',
+        'website',
     ],
     'data': [
         'security/res_group_data.xml',
