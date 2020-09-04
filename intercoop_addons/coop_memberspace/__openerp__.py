@@ -17,6 +17,7 @@
         'email_attachment_custom',
         'theme_bootswatch',
         'website',
+        'coop_membership'
     ],
     'data': [
         'security/res_group_data.xml',
