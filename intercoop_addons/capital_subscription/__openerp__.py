@@ -17,8 +17,6 @@
         'account_full_reconcile',
     ],
     'data': [
-        'data/data_product_product.xml',
-
         'security/res_groups.xml',
         'security/ir.model.access.csv',
         'views/action.xml',
